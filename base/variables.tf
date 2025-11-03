@@ -1,19 +1,19 @@
 variable "aws_region" {
   description = "main AWS region to use"
   type        = string
-  default     = "us-east-1"
+  default     = ""
 }
 
 variable "vpc_cidr_block" {
   description = ""
   type        = string
-  default     = "10.0.0.0/16"
+  default     = ""
 }
 
 variable "subnet1_cidr_block" {
   description = ""
   type        = string
-  default     = "10.0.0.0/24"
+  default     = ""
 }
 
 variable "vpc_enable_dns_hostnames" {
