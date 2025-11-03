@@ -1,6 +1,6 @@
 output "nginx1_public_dns" {
   description = ""
-  value       = aws_instance.nginx1.public_dns
+  value       = "http://${aws_instance.nginx1.public_dns}:${var.http_port}"
 }
 
 output "vpc_id" {

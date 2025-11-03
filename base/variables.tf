@@ -28,7 +28,7 @@ variable "subnet_map_public_ip_on_launch" {
   default     = true
 }
 
-variable "sg_ingress_port_number" {
+variable "http_port" {
   description = ""
   type        = number
 }
@@ -38,7 +38,7 @@ variable "ec2_instance_type" {
   type        = string
 }
 
-#####
+##### locals #####
 
 variable "company_name" {
   description = ""
