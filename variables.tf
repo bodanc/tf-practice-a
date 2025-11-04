@@ -1,3 +1,30 @@
+##### locals
+
+variable "company_name" {
+  description = ""
+  type        = string
+  default     = "EvilCorp"
+}
+
+variable "project" {
+  description = ""
+  type        = string
+  default     = ""
+}
+
+variable "environment" {
+  description = ""
+  type        = string
+  default     = ""
+}
+
+variable "billing_code" {
+  description = ""
+  type        = number
+}
+
+##### main
+
 variable "aws_region" {
   description = "main AWS region to use"
   type        = string
@@ -36,29 +63,4 @@ variable "http_port" {
 variable "ec2_instance_type" {
   description = ""
   type        = string
-}
-
-##### locals #####
-
-variable "company_name" {
-  description = ""
-  type        = string
-  default     = "EvilCorp"
-}
-
-variable "project" {
-  description = ""
-  type        = string
-  default     = ""
-}
-
-variable "environment" {
-  description = ""
-  type        = string
-  default     = ""
-}
-
-variable "billing_code" {
-  description = ""
-  type        = number
 }
